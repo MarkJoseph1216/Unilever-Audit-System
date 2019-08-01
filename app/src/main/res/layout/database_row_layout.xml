@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/tvwUpdatedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccentDark"
+        android:layout_marginBottom="6dp"
+        android:textStyle="bold"
+        android:text="UPDATED AT: 07/20/2016"/>
+
+    <TextView
+        android:id="@+id/tvwId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingStart="6dp"
+        android:layout_marginBottom="4dp"
+        android:text="ID: 1"/>
+
+
+    <TextView
+        android:id="@+id/tvwDatabaseVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingStart="6dp"
+        android:layout_marginBottom="4dp"
+        android:text="DB Version: 1"/>
+
+    <TextView
+        android:id="@+id/tvwName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        android:paddingStart="6dp"
+        android:text="Name: TcrDB"/>
+
+    <TextView
+        android:id="@+id/tvwCreated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:paddingStart="6dp"
+        android:text="Created at: --/--/--"/>
+
+</LinearLayout>

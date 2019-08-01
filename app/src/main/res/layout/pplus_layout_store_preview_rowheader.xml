@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_question_row"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvwHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="AUDIT SUMMARY"/>
+
+    <TextView
+        android:id="@+id/tvwStoreTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="3dp"
+        android:gravity="center"
+        android:text="PG ANABU - MT ASPIRATIONAL"/>
+
+    <TextView
+        android:id="@+id/tvwOsa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="3dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="OSA: 0 / 100"/>
+
+<!--    <TextView
+        android:id="@+id/tvwStoreScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:padding="3dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text="FAILED"/>-->
+
+</LinearLayout>

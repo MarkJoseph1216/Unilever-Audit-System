@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwCustomerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="CUSTOMER NAME"/>
+
+        <TextView
+            android:id="@+id/tvwAuditName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@color/primary_text"
+            android:text="SAMPLE"/>
+
+        <TextView
+            android:id="@+id/tvwPerfectStore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@color/primary_text"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/tvwOSA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@color/primary_text"
+            android:text="0.00"/>
+
+        <TextView
+            android:id="@+id/tvwNPI"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@color/primary_text"
+            android:text="0.00"/>
+
+        <TextView
+            android:id="@+id/tvwPlanogram"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@color/primary_text"
+            android:text="0.00"/>
+
+    </LinearLayout>
+
+</LinearLayout>

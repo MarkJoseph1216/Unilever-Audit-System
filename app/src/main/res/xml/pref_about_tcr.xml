@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="About Trade Check Report" />
+
+    <Preference
+        android:id="@+id/info_version_name"
+        android:key="version_name_key"
+        android:summary="1.0.0"
+        android:title="Version" />
+
+    <Preference
+        android:id="@+id/info_version_code"
+        android:key="version_code_key"
+        android:summary="1"
+        android:title="Version code" />
+
+
+    <PreferenceCategory
+        android:title="App info" />
+
+    <Preference
+        android:id="@+id/info_changelog"
+        android:key="changelog_key"
+        android:summary="See changes made for every new version released."
+        android:title="Change logs" />
+
+    <Preference
+        android:id="@+id/info_copyright"
+        android:key="developer_key"
+        android:summary="Chase Technologies Corporation."
+        android:title="Developer" />
+
+</PreferenceScreen>

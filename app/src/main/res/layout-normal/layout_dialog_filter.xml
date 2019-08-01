@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:padding="6dp"
+    android:background="#ffd6d6d6">
+
+    <TextView
+        android:id="@+id/tvwFilterTitle"
+        android:gravity="center"
+        android:text="Select Branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="5dp"/>
+
+    <ListView
+        android:id="@+id/lvwFilters"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#ffd6d6d6"
+        android:dividerHeight="5dp"
+        android:listSelector="@drawable/style_listview_design"/>
+
+    <Button
+        android:id="@+id/btnFilterBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        style="@style/ButtonTextBlue_normal"
+        android:background="@drawable/btn_primary" />
+
+</LinearLayout>

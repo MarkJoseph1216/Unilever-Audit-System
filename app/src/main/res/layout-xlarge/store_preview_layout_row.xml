@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_question_row"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tvwPreviewCateg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="30sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/flat_normal_text"
+            android:text="SHAMPOO"/>
+
+        <TextView
+            android:id="@+id/tvwPreviewCategStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="26sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:textColor="@color/red"
+            android:text="FAILED"/>
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/tblPreviewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp">
+
+        <include layout="@layout/store_preview_layout_subrow"/>
+        <include layout="@layout/store_preview_layout_subrow"/>
+        <include layout="@layout/store_preview_layout_subrow"/>
+        <include layout="@layout/store_preview_layout_subrow"/>
+        <include layout="@layout/store_preview_layout_subrow"/>
+
+    </TableLayout>
+
+</LinearLayout>

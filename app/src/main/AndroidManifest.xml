@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.pplusaudit2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/new_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="._Store.StoreActivity"
+            android:label="Store"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="._Category.CategoryActivity"
+            android:label="Activity"
+            android:parentActivityName="._Store.StoreActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard.DashboardActivity"
+            android:label=""
+            android:parentActivityName="._Store.StoreActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="._Questions.QuestionsActivity"
+            android:label="Questions"
+            android:parentActivityName="._Group.GroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="._Group.GroupActivity"
+            android:label="Group"
+            android:parentActivityName="._Category.CategoryActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="._Questions.Pplus_Questions_signaturepad"
+            android:label="Signature Pad"
+            android:parentActivityName="._Category.CategoryActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="._Store.StorePreviewActivity"
+            android:label="AUDIT SUMMARY"
+            android:parentActivityName="._Store.StoreActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="._Store.StoreActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Report.AuditSummary.ReportAuditActivity" />
+        <activity
+            android:name=".Report.StoreSummary.ReportStoreActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Report.ReportDashboard.ReportsActivity"
+            android:label="Reports" />
+
+        <service
+            android:name=".AutoUpdateApk.NLService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".PJP_Compliance.PjpActivity"
+            android:label="PJP Compliance" />
+        <activity
+            android:name=".PJP_Compliance.PjpPreviewActivity"
+            android:label="Check in record" />
+        <activity
+            android:name=".Report.CustomerSummary.CustomerSummaryReport"
+            android:label="Customer Summary Report"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Report.CustomerSummary.CustomerSummarySubReport"
+            android:label="Customer Summary Report"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Report.CustomerRegionSummary.CustomerRegionReport"
+            android:label="Customer Region Summary Report"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Report.CustomerRegionSummary.CustomerRegionSubReport"
+            android:label="Customer Region Summary Report"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Report.OSAReport.OsaReportActivity"
+            android:label="OSA REPORT" />
+        <activity
+            android:name=".Report.NPIReport.NpiReportActivity"
+            android:label="NPI REPORT" />
+        <activity
+            android:name=".Report.SOSReport.SosReportActivity"
+            android:label="@string/string_sos_report"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Report.CustomizedPlanoReport.CustomizedPlanoReportActivity"
+            android:label="Customized Planogram Report"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Report.PjpFrequencyReport.PjpFrequencyActivity"
+            android:label="PJP Frequency Report" />
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:label="@string/title_activity_settings"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

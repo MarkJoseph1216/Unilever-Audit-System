@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dividers">
+
+    <LinearLayout
+        android:id="@+id/lnrLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout android:id="@+id/login_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgUnilever"
+                    android:layout_width="300dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/tcr_logo"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:textSize="24sp"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="sans-serif-light"
+                    android:text="1.0.0"
+                    android:id="@+id/tvwVersion" />
+
+                <EditText
+                    android:id="@+id/txtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_username"
+                    android:textColorHint="@color/disabled_hint_text"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:background="@drawable/edittext_style"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <EditText android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edittext_style"
+                    android:textColorHint="@color/disabled_hint_text"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="10dp"
+                    android:maxLines="1" />
+
+                <Button android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_log_in"
+                    android:background="@drawable/btn_accent"
+                    style="@style/button_design"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center"
+                    android:textSize="14sp"
+                    android:textColor="@color/primary_text"
+
+                    android:layout_marginTop="20dp"
+                    android:text="@string/string_copyright"/>
+
+                <TextView
+                    android:id="@+id/tvwSendError"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|center"
+                    android:textSize="14sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/send_bug_report"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

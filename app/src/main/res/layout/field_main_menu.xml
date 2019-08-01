@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/style_gridview_background"
+    android:padding="5dp">
+
+<!--    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_menu_audit"
+        android:id="@+id/imageViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="5dp" />-->
+
+    <TextView
+        android:id="@+id/tvwImagemenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="90sp"
+        android:text="5"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:text="PJP CALENDAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Action" />
+
+    <Preference
+        android:id="@+id/db_export"
+        android:key="db_export_key"
+        android:summary="Export database to web server for backup and data support purposes."
+        android:title="Export database" />
+
+    <Preference
+        android:id="@+id/db_import"
+        android:key="db_import_key"
+        android:summary="Import database from web server, to manage and check some data errors."
+        android:title="Import database" />
+
+    <PreferenceCategory
+        android:title="Device details" />
+
+    <Preference
+        android:id="@+id/pref_device_id"
+        android:key="pref_device_id_key"
+        android:summary=""
+        android:title="Device ID" />
+
+    <Preference
+        android:id="@+id/pref_db_version"
+        android:key="pref_db_version"
+        android:summary=""
+        android:title="Current Database Version" />
+
+</PreferenceScreen>

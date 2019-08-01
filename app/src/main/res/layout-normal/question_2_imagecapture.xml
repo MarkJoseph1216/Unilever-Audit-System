@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tblRowimagecapture"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_question_row"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvwImageCapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/TextViewPrimary_medium"
+        android:text="Click to add photo" />
+
+    <Button
+        android:id="@+id/btnAddphoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ADD PHOTO"
+        style="@style/button_design"
+        android:background="@drawable/btn_primary" />
+
+    <ImageView
+        android:id="@+id/imgCapture"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_thumbnail"
+        android:background="@color/colorPrimary_disabled"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimary_pressed"
+        android:layout_marginTop="20dp">
+
+    </LinearLayout>
+
+</LinearLayout>

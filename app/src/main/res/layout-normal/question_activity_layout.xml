@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrQuestions"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lnrHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <!--<include layout="@layout/question_13_header" />-->
+
+    </LinearLayout>
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffd6d6d6"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <TableLayout
+            android:id="@+id/tblQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:background="#ffd6d6d6"
+            android:divider="#ffd6d6d6"
+            android:dividerHeight="5dp">
+
+            <include layout="@layout/question_1_label" />
+            <include layout="@layout/question_2_imagecapture" />
+            <include layout="@layout/question_3_numeric" />
+            <include layout="@layout/question_4_singlelinetext" />
+            <include layout="@layout/question_5_multilinetext" />
+            <include layout="@layout/question_6_signature"/>
+            <include layout="@layout/question_7_date" />
+            <include layout="@layout/question_8_time" />
+            <include layout="@layout/question_9_multiitem" />
+            <include layout="@layout/question_10_singleitem" />
+            <include layout="@layout/question_11_computational"/>
+            <include layout="@layout/question_12_conditional"/>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBackQuestion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BACK"
+            style="@style/button_design"
+            android:background="@drawable/btn_accent" />
+
+        <Button
+            android:id="@+id/btnSaveSurvey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SAVE SURVEY"
+            style="@style/button_design"
+            android:background="@drawable/btn_primary" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

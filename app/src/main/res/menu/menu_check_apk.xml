@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/action_check_apk"
+            android:title="@string/check_apk"
+            android:orderInCategory="100"/>
+        <item android:id="@+id/action_error"
+            android:title="@string/action_error_send"
+            android:orderInCategory="100"/>
+        <item android:id="@+id/action_sync_masterfile"
+            android:title="@string/action_sync_mfile"
+            android:orderInCategory="100"/>
+</menu>

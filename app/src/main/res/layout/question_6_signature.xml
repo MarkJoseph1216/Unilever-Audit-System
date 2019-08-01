@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tblRowSignature"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_question_row"
+    android:paddingBottom="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvwSign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            style="@style/TextViewPrimary_medium"
+            android:text="Click the button below and sign on the white area."/>
+
+        <Button
+            android:id="@+id/btnAddSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD SIGNATURE"
+            style="@style/button_design"
+            android:background="@drawable/btn_primary" />
+
+        <ImageView
+            android:id="@+id/imgSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary_disabled"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

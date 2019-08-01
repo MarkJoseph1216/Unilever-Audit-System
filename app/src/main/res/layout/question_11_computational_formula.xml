@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tblRowFormula"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tvwFormula"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewPrimary_medium"
+        android:textStyle="bold"
+        android:text="Prompt:" />
+
+    <EditText
+        android:id="@+id/txtFormula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:digits="0123456789"
+        android:text="0"
+        android:inputType="number|numberDecimal"/>
+
+    <!--    <TextView
+            android:id="@+id/tvwFormula"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            style="@style/TextViewPrimary_small"
+            android:padding="10dp"
+            android:text="Prompt:" />
+
+        <EditText
+            android:id="@+id/txtFormula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:inputType="number|numberDecimal"/>-->
+
+
+
+</LinearLayout>

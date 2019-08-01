@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/style_question_row"
+    android:padding="20dp">
+
+    <TableLayout
+        android:id="@+id/tblComputational"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:divider="#ffd6d6d6">
+
+        <include layout="@layout/question_11_computational_formula"/>
+        <include layout="@layout/question_11_computational_formula"/>
+        <include layout="@layout/question_11_computational_formula"/>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrSOS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/color_highlight"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvwTargetDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/TextViewPrimary_medium"
+            android:gravity="center_vertical"
+            android:text="TOTAL TARGET SHARE: " />
+
+        <TextView
+            android:id="@+id/tvwTargetSOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewPrimary_medium"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvwComputationTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewPrimary_medium"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:text="TOTAL ULP: " />
+
+        <EditText
+            android:id="@+id/txtTotalComputational"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewPrimary_medium"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="0"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimary_pressed">
+
+    </LinearLayout>
+
+</LinearLayout>
